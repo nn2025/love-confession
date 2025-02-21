@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>致我最爱的人</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 添加加载提示 -->
+        <div id="loading" class="loading">
+            <span>正在准备浪漫...</span>
+        </div>
+        
+        <!-- 背景图片轮播 -->
+        <div class="slideshow">
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?w=1600" alt="粉色樱花">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1469122312224-c5846569feb1?w=1600" alt="浪漫日落">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1548588627-f978862b85e1?w=1600" alt="粉色玫瑰">
+            </div>
+        </div>
+
+        <!-- 主要内容 -->
+        <div class="content">
+            <div class="typing-text"></div>
+            <div class="hearts"></div>
+            <button id="accept-btn" class="hidden">我愿意</button>
+        </div>
+
+        <!-- 音乐播放器 -->
+        <div class="music-player">
+            <audio id="bgMusic" loop>
+                <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Impact/Kevin_MacLeod_-_01_-_Impact_Prelude.mp3" type="audio/mpeg">
+            </audio>
+            <button id="musicToggle">♫</button>
+        </div>
+
+        <!-- 添加图片加载失败的备用显示 -->
+        <div class="fallback-bg"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html> 
